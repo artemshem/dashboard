@@ -1,0 +1,1 @@
+{"ast":null,"code":"import App from './_app';\nexport default App;","map":{"version":3,"sources":["E:/Work/Projects/test-app/src/pages/index.jsx"],"names":["App"],"mappings":"AAAA,OAAOA,GAAP,MAAgB,QAAhB;AAEA,eAAeA,GAAf","sourcesContent":["import App from './_app';\n\nexport default App;"]},"metadata":{},"sourceType":"module"}

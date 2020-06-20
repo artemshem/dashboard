@@ -1,0 +1,45 @@
+$font-path: "/fonts" !default;
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('#{$font-path}/roboto/roboto-regular.eot');
+	src: local('Roboto Regular'), local('#{$font-path}/roboto/roboto-regular'),
+		url('#{$font-path}/roboto/roboto-regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/roboto/roboto-regular.woff') format('woff'),
+		url('#{$font-path}/roboto/roboto-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('#{$font-path}/roboto/roboto-bold.eot');
+	src: local('Roboto Bold'), local('#{$font-path}/roboto/roboto-bold'),
+		url('#{$font-path}/roboto/roboto-bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/roboto/roboto-bold.woff') format('woff'),
+		url('#{$font-path}/roboto/roboto-bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('#{$font-path}/roboto/roboto-italic.eot');
+	src: local('Roboto Italic'), local('#{$font-path}/roboto/roboto-italic'),
+		url('#{$font-path}/roboto/roboto-italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/roboto/roboto-italic.woff') format('woff'),
+		url('#{$font-path}/roboto/roboto-italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('#{$font-path}/roboto/roboto-bolditalic.eot');
+	src: local('Roboto Bold Italic'), local('#{$font-path}/roboto/roboto-bolditalic'),
+		url('#{$font-path}/roboto/roboto-bolditalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-path}/roboto/roboto-bolditalic.woff') format('woff'),
+		url('#{$font-path}/roboto/roboto-bolditalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
