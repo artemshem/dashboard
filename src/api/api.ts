@@ -5,8 +5,10 @@ export default class API {
       .then((response) => response.json())
   }
 
+  //&seed=abv
+
   async getUsers (numberOfUsers: number) {
-    const url = `https://randomuser.me/api/?page=1&results=${numberOfUsers}&seed=abv`;
+    const url = `https://randomuser.me/api/?page=1&results=${numberOfUsers}`;
     return fetch(url)
       .then((response) => response.json())
   }

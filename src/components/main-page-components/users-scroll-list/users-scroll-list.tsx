@@ -25,9 +25,9 @@ class UserScrollList extends Component<any, any> {
         </div>
         <div className="user-scroll-body">
           <div className="user-scroll-list">
-            {users.map((item) => {
+            {users.map((item, index) => {
               return (
-                <div className="user-scroll-item">
+                <div className="user-scroll-item" key={index}>
                   <img className="user-scroll__img" src={item.picture.thumbnail} alt="user" />
                   <span className="user-scroll__name">{item.name.first} {item.name.last}</span>
                 </div>

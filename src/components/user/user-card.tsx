@@ -18,16 +18,24 @@ interface IComponentProps {
   location: {
     city: string;
   };
+  uniqueID: number;
+  gender: string,
+  dob: {
+    age: number;
+  }
+  clickOnCard: (uniqueID) => number;
 }
 
 class UserCard extends Component<IComponentProps> {
 
   render() {
-    const { name, picture, login, phone, registered, location } = this.props;
+    const { name, picture, login, phone, registered, location, uniqueID, gender, dob, clickOnCard } = this.props;
 
     return (
-      <div className="user-card">
-        <div className="user-card-inner">
+      <div className="user-card-outer">
+        <div className="user-card"
+          onClick={() => clickOnCard(uniqueID)}
+        >
           <div className="user-card-header">
             <div className="user-card__name">
               {name.first} {name.last}
@@ -39,8 +47,8 @@ class UserCard extends Component<IComponentProps> {
           <div className="user-card-info">
             <p className="user-card-info__item">Username: {login.username}</p>
             <p className="user-card-info__item">Phone: {phone}</p>
-            <p className="user-card-info__item">Registered: {registered.date}</p>
-            <p className="user-card-info__item">City: {location.city}</p>
+            <p className="user-card-info__item">Gender: {gender}</p>
+            <p className="user-card-info__item">Age: {dob.age}</p>
           </div>
         </div>
       </div>

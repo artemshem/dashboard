@@ -23,6 +23,10 @@ class Main extends Component<any, any> {
   
   render() {
 
+    // if( typeof(window) !== 'undefined') {
+    //   console.log(window.innerWidth);
+    // }
+
     return (
       <div className="main-page">
         <div className="info-block info-block_top">
@@ -36,7 +40,7 @@ class Main extends Component<any, any> {
               data={data}
               options={options}
               width="100%"
-              height="378px"
+              height="100%"
               legendToggle
             />  
             </div>

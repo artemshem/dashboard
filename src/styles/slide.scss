@@ -1,5 +1,4 @@
-
-.slideContainer {
+.slide-container {
   width: 63.5%;
   height: 100%;
   position: fixed;
@@ -12,7 +11,50 @@
   top: 0px;
   overflow-y: scroll;
   overflow-x: hidden;
+  transition: 1s;
   &>div {
     height: 100%;
+  }
+  &.active {
+    right: 0%;
+  }
+}
+
+.slide-close {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 100;
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.slide-info {
+  padding: 40px;
+}
+
+.slide-info-block {
+  padding: 20px 0px;
+}
+
+.slide-info-head {
+  font-weight: bold;
+}
+
+.slide-info-line {
+  padding-left: 20px;
+  .slide-info__title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .slide-info__data {
+    font-size: 14px;
   }
 }
