@@ -11,13 +11,13 @@
   justify-content: space-between;
   align-items: center;
   &_tall {
-    width: 765px;
+    width: 48%;
   }
-  @media(max-width: 1910px) {
-    &_tall {
-      width: 500px;
-    }
-  }
+  // @media(max-width: 1910px) {
+  //   &_tall {
+  //     width: 500px;
+  //   }
+  // }
 }
 
 .info-block {
@@ -25,13 +25,13 @@
     // padding-bottom: 40px;
   }
   &_left {
-    max-width: 765px;
+    width: 48%;
   }
-  @media(max-width: 1910px) {
-    &_left {
-      max-width: 500px;
-    }
-  }
+  // @media(max-width: 1910px) {
+  //   &_left {
+  //     max-width: 500px;
+  //   }
+  // }
 }
 
 .info-block_top .info-item {
@@ -39,33 +39,38 @@
 }
 
 .info-item {
-  width: 355px;
+  width: 22.5%;
   height: 151px;
   background: #FFFFFF;
   border-radius: 10px;
   display: flex;
   &_chart {
-    width: 765px;
+    width: 100%;
     height: 378px;
     margin-bottom: 40px;
+    overflow: hidden;
   }
   &_tall {
-    width: 355px;
+    width: 47%;
     height: 572px;
     flex-direction: column;
   }
-  @media(max-width: 1910px) {
-    width: 200px;
-    height: 90px;
-    &_chart {
-      width: 500px;
-      height: 250px;
-    }
-    &_tall {
-      width: 200px;
-      height: 380px;
-    }
-  }
+  // @media(max-width: 1910px) {
+  //   width: 200px;
+  //   height: 90px;
+  //   &_chart {
+  //     width: 500px;
+  //     height: 250px;
+  //   }
+  //   &_tall {
+  //     width: 200px;
+  //     height: 380px;
+  //   }
+  // }
+}
+
+.info-block_left  .info-line > .info-item {
+  width: 47%;
 }
 
 .info-item-left {
@@ -74,10 +79,10 @@
   justify-content: center;
   padding-left: 40px;
   padding-right: 20px;
-  @media(max-width: 1910px) {
-    padding-left: 20px;
-    padding-right: 10px;
-  }
+  // @media(max-width: 1910px) {
+  //   padding-left: 20px;
+  //   padding-right: 10px;
+  // }
 }
 
 .info-item__img {
@@ -102,10 +107,10 @@
   &_yellow {
     background: rgba(255, 184, 0, 0.07);
   }
-  @media(max-width: 1910px) {
-    width: 40px;
-    height: 40px;
-  }
+  // @media(max-width: 1910px) {
+  //   width: 40px;
+  //   height: 40px;
+  // }
 }
 
 .info-item-right {
@@ -123,9 +128,9 @@
   letter-spacing: 0.01em;
   color: #000000;
   width: 100%;
-  @media(max-width: 1910px) {
-    font-size: 18px;
-  }
+  // @media(max-width: 1910px) {
+  //   font-size: 18px;
+  // }
 }
 
 .info-item__desc {
@@ -136,8 +141,8 @@
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #A6ACBE;
-  @media(max-width: 1910px) {
-    margin-top: 0px;
-    font-size: 12px;
-  }
+  // @media(max-width: 1910px) {
+  //   margin-top: 0px;
+  //   font-size: 12px;
+  // }
 }

@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 import { autologin } from '../redux/actions';
 import { capitalize } from '../utils/commonUtils';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component<any, any> {
   state = {
