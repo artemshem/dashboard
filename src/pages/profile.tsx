@@ -9,14 +9,16 @@ class Profile extends Component<any, any> {
   }
 
   render() {
-    
+
     return (
-      <div className="main-container">
-        <div
-          className="standard-button"
-          onClick={this.logout}
-        >
-          Logout
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-6 col-sm-3 col-xl-2">1</div>
+          <div className="col-6 col-sm-3 col-xl-2">2</div>
+          <div className="col-6 col-sm-3 col-xl-2">3</div>
+          <div className="col-6 col-sm-3 col-xl-2">4</div>
+          <div className="col-6 col-sm-3 col-xl-2">5</div>
+          <div className="col-6 col-sm-3 col-xl-2">6</div>
         </div>
       </div>
     )

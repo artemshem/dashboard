@@ -3,18 +3,19 @@ import InfoLineItem from './info-line-item';
 
 interface IComponentProps {
   data: Array<any>;
+  grid: string;
 }
 
 class InfoLine extends Component<IComponentProps> {
   
   render() {
-    const { data } = this.props;
+    const { data, grid } = this.props;
 
     return (
-      <div className="info-line">
+      <div className="row">
         {data.map((item, index) => {
           return (
-            <InfoLineItem {...item} key={index} />
+            <InfoLineItem {...item} grid={grid} key={index} />
           )
         })}
       </div>
